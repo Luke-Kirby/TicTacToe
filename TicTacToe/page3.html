@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TicTacToe</title>
+    <link href="style3.css" rel="stylesheet" />
+    <script src="scripts/page3.js"></script>
+  </head>
+
+  <div class="page-container">
+    <div class="game-container">
+      <h3 class="game-name"><em>TicTacToe</em></h3>
+
+      <div id="square1" class="square1" onclick="pushInButton()"></div>
+
+      <div id="square2" class="square2" onclick="turnWhite()"></div>
+
+      <div class="gameBorder">
+        <div id="win" class="winLine"></div>
+
+        <div id="winMessage" class="winMessage">
+          <p id="winText" class="winText">You Suck!</p>
+        </div>
+
+        <div class="grid">
+          <!-- Below are the blank divs to be clicked-->
+
+          <div class="position1-1 blankSection" onclick="ticTacToe(1,1)"></div>
+
+          <div class="position1-2 blankSection" onclick="ticTacToe(1,2)"></div>
+
+          <div class="position1-3 blankSection" onclick="ticTacToe(1,3)"></div>
+
+          <div class="position2-1 blankSection" onclick="ticTacToe(2,1)"></div>
+
+          <div class="position2-2 blankSection" onclick="ticTacToe(2,2)"></div>
+
+          <div class="position2-3 blankSection" onclick="ticTacToe(2,3)"></div>
+
+          <div class="position3-1 blankSection" onclick="ticTacToe(3,1)"></div>
+
+          <div class="position3-2 blankSection" onclick="ticTacToe(3,2)"></div>
+
+          <div class="position3-3 blankSection" onclick="ticTacToe(3,3)"></div>
+
+          <!-- Below are the resultant shape divs-->
+
+          <div id="section1-1" class="position1-1 clickedSection"></div>
+
+          <div id="section1-2" class="position1-2 clickedSection"></div>
+
+          <div id="section1-3" class="position1-3 clickedSection"></div>
+
+          <div id="section2-1" class="position2-1 clickedSection"></div>
+
+          <div id="section2-2" class="position2-2 clickedSection"></div>
+
+          <div id="section2-3" class="position2-3 clickedSection"></div>
+
+          <div id="section3-1" class="position3-1 clickedSection"></div>
+
+          <div id="section3-2" class="position3-2 clickedSection"></div>
+
+          <div id="section3-3" class="position3-3 clickedSection"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</html>

@@ -1,0 +1,247 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.game-container {
+  height: 100vh;
+  aspect-ratio: 1 / 1.186;
+  background-image: url(Images/bodyPicture.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.game-name {
+  position: absolute;
+  font-size: 50px;
+  font-family: "Brush Script MT", cursive;
+  font-weight: bold;
+  top: -30px;
+  right: 100px;
+}
+
+.noPaddingMargin {
+  padding: 0;
+  margin: 0;
+  /* position: relative; */
+  text-align: center;
+  z-index: 0;
+}
+
+.heading {
+  position: relative;
+  padding-top: 110px;
+  padding-bottom: 80px;
+  margin-bottom: -100px;
+  background: linear-gradient(180deg, #1a33a3 50%, #1a33a3 70%, #1a33a300 100%);
+  z-index: 2;
+}
+
+h1 {
+  text-align: center;
+  font-family: American Typewriter (serif);
+  margin: 0;
+  padding: 0;
+  font-size: 50px;
+  color: rgb(0, 0, 0);
+}
+
+.square1 {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  top: 50px;
+  left: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  background-image: url(Images/button.png);
+  background-size: cover;
+  z-index: 20;
+}
+
+.square2 {
+  visibility: hidden;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  top: 50px;
+  left: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  background-image: url(Images/buttonClicked.png);
+  background-size: cover;
+  z-index: 21;
+}
+
+.gameBorder {
+  position: relative;
+  top: 150px;
+  height: 600px;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-color: black;
+  border-width: 5px;
+  border-radius: 30%;
+  background: whitesmoke;
+  z-index: 1;
+}
+.grid {
+  position: relative;
+  top: 50px;
+  height: 500px;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(Images/TicTacToeGrid.png);
+  background-size: cover;
+  z-index: 1;
+}
+
+.blankSection {
+  z-index: 1;
+  border-radius: 40%;
+}
+
+.blankSection:hover {
+  background: rgb(249, 255, 197);
+  z-index: 4;
+}
+
+.clickedSection {
+  background-size: cover;
+  visibility: hidden;
+  border-radius: 40%;
+  z-index: 5;
+}
+
+.winLine {
+  position: absolute;
+  top: -10px;
+  height: 600px;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30%;
+  background-image: url(Images/diag2Win.png);
+  background-size: cover;
+  visibility: hidden;
+  z-index: 2;
+}
+
+.winMessage {
+  background: linear-gradient(270deg, #ebebeb 40%, #686868);
+  border-style: solid;
+  border-color: black;
+  border-width: 5px;
+  border-radius: 10%;
+  position: absolute;
+  top: 240px;
+  left: 100px;
+  height: 100px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  visibility: hidden;
+  z-index: 3;
+  background-image: radial-gradient(#b8b8b8 60%, #000000);
+}
+
+.winText {
+  position: relative;
+  margin: auto;
+  padding: auto;
+  font-size: 50px;
+  font-family: sans-serif;
+  color: rgb(211, 0, 0);
+  font-weight: 600;
+}
+
+.position1-1 {
+  position: absolute;
+  top: 20px;
+  left: 22px;
+  height: 147px;
+  width: 147px;
+}
+
+.position1-2 {
+  position: absolute;
+  top: 20px;
+  left: 175px;
+  height: 147px;
+  width: 147px;
+}
+
+.position1-3 {
+  position: absolute;
+  top: 20px;
+  left: 328px;
+  height: 147px;
+  width: 147px;
+}
+
+.position2-1 {
+  position: absolute;
+  top: 173px;
+  left: 22px;
+  height: 147px;
+  width: 147px;
+}
+
+.position2-2 {
+  position: absolute;
+  top: 173px;
+  left: 175px;
+  height: 147px;
+  width: 147px;
+}
+
+.position2-3 {
+  position: absolute;
+  top: 173px;
+  left: 328px;
+  height: 147px;
+  width: 147px;
+}
+
+.position3-1 {
+  position: absolute;
+  top: 326px;
+  left: 22px;
+  height: 147px;
+  width: 147px;
+}
+
+.position3-2 {
+  position: absolute;
+  top: 326px;
+  left: 175px;
+  height: 147px;
+  width: 147px;
+}
+
+.position3-3 {
+  position: absolute;
+  top: 326px;
+  left: 328px;
+  height: 147px;
+  width: 147px;
+}
